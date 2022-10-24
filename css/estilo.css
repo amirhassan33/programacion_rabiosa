@@ -6,6 +6,24 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 770px) {
+    .carousel-caption {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .carousel-caption {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .carousel-caption {
+        font-size: xx-small;
+    }
+}
+
 .navbar {
     background: rgb(148, 187, 233);
     background: linear-gradient(90deg, rgba(148, 187, 233, 1) 0%, rgba(183, 182, 221, 1) 50%, rgba(238, 174, 202, 1) 100%);
@@ -66,12 +84,12 @@
     }
 }
 
-.cuerpo__secundario{
+.cuerpo__secundario {
     display: flex;
     padding: 50px;
 }
 
-.cuerpo__secundario__texto{
+.cuerpo__secundario__texto {
     text-align: center;
     border-style: solid;
     border-radius: 5px;
@@ -82,9 +100,10 @@
 
 @media screen and (max-width: 1024px) {
     .cuerpo__secundario {
-        flex-direction: column;   
+        flex-direction: column;
     }
 }
+
 .margen__formulario {
     margin: 0px 30px 30px 30px;
 }
@@ -508,7 +527,7 @@
     margin: 10px 0px 10px 20px;
 }
 
-.cuidado{
+.cuidado {
     width: 200px;
     background-color: green;
 }
