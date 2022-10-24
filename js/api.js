@@ -39,7 +39,7 @@ function funcionLectura() {
 
 function descargarArchivo() {
     inicialilzar_XHR();
-    var origenArch = 'http://jsonplaceholder.typicode.com/users';
+    var origenArch = 'https://jsonplaceholder.typicode.com/users';
     realizarPeticion(origenArch, 'GET', funcionLectura); // funcioLectura es la que se va activar cuando cargue la respuesta del servidor
 }
 
