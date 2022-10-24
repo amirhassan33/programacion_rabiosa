@@ -1,4 +1,4 @@
-document.getElementById("datos").innerHTML = "<p><strong>Autores:</strong><br>Cristian Alejandro Nasso - cristiannasso2@gmail.com<br>Leonardo Walter Rios - leon18s@hotmail.com<br>Dario Fernando Montesino - montesinodario@gmail.com</p>";
+document.getElementById("datoss").innerHTML = "<p><strong>Autores:</strong><br>Cristian Alejandro Nasso - cristiannasso2@gmail.com<br>Leonardo Walter Rios - leon18s@hotmail.com<br>Dario Fernando Montesino - montesinodario@gmail.com</p>";
 
 var peticionHTTP;
 
