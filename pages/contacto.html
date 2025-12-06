@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Veterinaria programacion rabiosa - Contacto</title>
+</head>
+
+<body>
+    <header class="cabeza">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="imagen_nav" src="../img/perritopaseando.png"
+                        alt="Perrito paseando"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html"><img src="../img/home.png"
+                                    alt="Casita"> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./razaperro.html"><img src="../img/dog.png" alt="Perrito"> Raza
+                                perro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tienda.html"><img src="../img/briefcase.png" alt="Cajita">
+                                Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./api.html"><img src="../img/mensaje.png" alt="Mensaje">
+                                Open data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html"><img src="../img/mensaje.png" alt="Mensaje">
+                                Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="cuerpo">
+        <section>
+            <form class="margen__formulario row g-3" action="https://formspree.io/f/xpzbjzpn" method="POST" id="form">
+                <div class="col-md-6">
+                    <label for="Nombre_completo" class="form-label">Nombre completo</label>
+                    <input type="text" name="Nombre_completo" placeholder="Ingrese su nombre completo"
+                        class="form-control" id="Nombre_completo">
+                </div>
+                <div class="col-md-6">
+                    <label for="Apellido" class="form-label">Apellido</label>
+                    <input type="text" name="Apellido" placeholder="Ingrese su apellido" class="form-control"
+                        id="Apellido">
+                </div>
+                <div class="col-md-6">
+                    <label for="Correo_electronico" class="form-label">Correo electronico</label>
+                    <input type="email" name="Correo_electronico" placeholder="Ingrese su correo electronico"
+                        class="form-control" id="Correo_electronico">
+                </div>
+                <div class="col-md-6">
+                    <label for="DNI" class="form-label">DNI</label>
+                    <input type="number" name="DNI" placeholder="Ingrese su DNI" class="form-control" id="DNI">
+                </div>
+                <div class="col-12">
+                    <label for="Direccion" class="form-label">Direccion</label>
+                    <input type="text" name="Direccion" class="form-control" id="Direccion"
+                        placeholder="Ingrese su direccion">
+                </div>
+                <div class="col-12">
+                    <label for="Provincia" class="form-label">Provincia</label>
+                    <input type="text" name="Provincia" class="form-control" id="Provincia"
+                        placeholder="Ingrese la provincia">
+                </div>
+                <div class="col-md-6">
+                    <label for="Localidad" class="form-label">Localidad</label>
+                    <input type="text" name="Localidad" placeholder="Ingresa la localidad" class="form-control"
+                        id="Localidad">
+                </div>
+                <div class="col-md-4">
+                    <label for="Pais" class="form-label">Pais</label>
+                    <select id="Pais" name="Pais" class="form-select">
+                        <option selected>Elige el pais</option>
+                        <option>Argentina</option>
+                        <option>Chile</option>
+                        <option>Uruguay</option>
+                        <option>Paraguay</option>
+                        <option>Peru</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="Codigo_postal" class="form-label">Codigo postal</label>
+                    <input type="number" name="Codigo_postal" placeholder="Ingresa el codigo postal"
+                        class="form-control" id="Codigo_postal">
+                </div>
+                <div class="col-12">
+                    <label for="Comentarios" class="form-label">Comentarios</label>
+                    <textarea class="form-control" name="Comentarios" id="Comentarios" rows="7"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="reset" class="btn btn-primary">Borrar</button>
+                    <p class="warnings" id="warnings"></p>
+                </div>
+            </form>
+        </section>
+        <section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26291.42934585028!2d-58.48169426496336!3d-34.54270032038413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb420f6902f33%3A0x319825d17bcaba0d!2sN%C3%BA%C3%B1ez%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1764942749549!5m2!1ses-419!2sar"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="cuerpo__icono">
+            <div class="cuerpo__icono__position">
+                <a class="cuerpo__icono__position__link" title="WhatsApp" target="_blank"
+                    href="https://wa.me/+5491136260941">
+                    <img class="cuerpo__icono__position__imagen" src="../img/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </section>
+    </main>
+    <footer class="pie">
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=61584375994497"><img class="imagen_red_social"
+                    src="../img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/desarrollowebamir/"><img class="imagen_red_social"
+                    src="../img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/cristian-alejandro-nasso/"><img class="imagen_red_social"
+                    src="../img/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://x.com/nasso_cristian"><img class="imagen_red_social" src="../img/x.png" alt="Twitter"></a>
+        </div>
+        <div id="datos">
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="../js/dom.js"></script>
+</body>
+
+</html>
